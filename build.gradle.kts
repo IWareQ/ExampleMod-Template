@@ -49,7 +49,8 @@ dependencies {
 val minecraftVersion: String by project
 extensions.configure(UserPatchExtension::class) {
     val forgeVersion: String by project
-    setVersion("$minecraftVersion-$forgeVersion")
+    version = "$minecraftVersion-$forgeVersion"
+    mappings = "stable_12"
 }
 
 tasks.processResources {
